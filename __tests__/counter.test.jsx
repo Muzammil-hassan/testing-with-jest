@@ -15,8 +15,8 @@ describe('Counter Component', () => {
   });
 
   it('when the increment button is pressed, the counter is incremented', () => {
-    const { getByRole } = render(<Counter />);
-    const incrementButton = getByRole('increment');
+    const { getByRole, getByText } = render(<Counter />);
+    const incrementButton = getByText('Increment');
     const counterElement = getByRole('counter');
 
     fireEvent.click(incrementButton);
@@ -25,8 +25,8 @@ describe('Counter Component', () => {
   });
 
   it('when the decrement button is pressed, the counter is decremented', () => {
-    const { getByRole } = render(<Counter />);
-    const decrementButton = getByRole('decrement');
+    const { getByRole, getByText } = render(<Counter />);
+    const decrementButton = getByText('Decrement');
     const counterElement = getByRole('counter');
 
     fireEvent.click(decrementButton);

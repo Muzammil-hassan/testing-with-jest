@@ -16,14 +16,13 @@ export default function Counter({ initial = 0, onChange = () => {} }) {
   };
 
   return (
-    <div>
-      <button role="decrement" onClick={handleDecrement}>
-        -
-      </button>
-      <span role="counter">Counter: {count}</span>
-      <button role="increment" onClick={handleIncrement}>
-        +
-      </button>
+    <div className="counter">
+      <h1>COUNTER</h1>
+      <div className="buttons">
+        <button onClick={handleDecrement}>Decrement</button>
+        <button onClick={handleIncrement}>Increment</button>
+      </div>
+      <p role="counter">{count}</p>
     </div>
   );
 }
