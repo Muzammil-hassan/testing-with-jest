@@ -20,7 +20,7 @@ export default function Counter({ initial = 0, onChange = () => {} }) {
       <button role="decrement" onClick={handleDecrement}>
         -
       </button>
-      <span role="counter">{count}</span>
+      <span role="counter">Counter: {count}</span>
       <button role="increment" onClick={handleIncrement}>
         +
       </button>

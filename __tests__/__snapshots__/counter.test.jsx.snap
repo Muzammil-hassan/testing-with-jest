@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter Component should match the snapshot 1`] = `
+<div>
+  <div>
+    <button
+      role="decrement"
+    >
+      -
+    </button>
+    <span
+      role="counter"
+    >
+      Counter: 
+      0
+    </span>
+    <button
+      role="increment"
+    >
+      +
+    </button>
+  </div>
+</div>
+`;

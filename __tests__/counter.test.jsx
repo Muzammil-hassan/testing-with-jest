@@ -33,4 +33,9 @@ describe('Counter Component', () => {
 
     expect(counterElement).toHaveTextContent('-1');
   });
+
+  it('should match the snapshot', () => {
+    const { container } = render(<Counter />);
+    expect(container).toMatchSnapshot();
+  });
 });
