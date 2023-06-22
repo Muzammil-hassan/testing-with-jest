@@ -39,6 +39,7 @@ describe('LoginForm', () => {
     fireEvent.change(emailInput, { target: { value: 'invalid_email' } });
     fireEvent.change(passwordInput, { target: { value: 'password123' } });
 
+    const submitButton = getByText('Login');
     fireEvent.click(submitButton);
 
     const errorMessage = getByText('Please enter a valid email address');
